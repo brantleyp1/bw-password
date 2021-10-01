@@ -63,7 +63,7 @@ if [[ "$1" == "-t" ]]; then
 	else
 		newpass="${2}"
 	fi
-elif [[ "$1" == "-h" ]]; then
+elif [[ "$1" =~ ^-+[a-z] ]]; then
 	echo -e "Usage:
   $0
     -h			Show this help screen.
